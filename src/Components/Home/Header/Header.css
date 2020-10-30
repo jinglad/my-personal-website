@@ -1,0 +1,9 @@
+header {
+    /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.692)), to(rgba(0, 0, 0, 0.692))), url("img/image_1.webp"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692)), url("../../../image/header-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+  }
