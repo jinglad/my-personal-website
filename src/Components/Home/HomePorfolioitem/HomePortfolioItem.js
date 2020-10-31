@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { projectContext } from '../../../App';
 
 const HomePortfolioItem = (props) => {
-    const { img_1, title, shortDescription } = props.item;
+    const { img_1, title, shortDescription, website, client_side_code } = props.item;
 
     const [project, setProject] = useContext(projectContext);
 
@@ -14,17 +14,18 @@ const HomePortfolioItem = (props) => {
     return (
         <>
 
-            <div className="col-md-4">
-                <div className="card" style={{ width: "18rem" }}>
-                    <Link onClick={() => handleProject(props.item)} className="text-decoration-none text-dark" to="/portfolioItemDetails">
-                        <img src={img_1} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">{title}</h5>
-                            <p className="card-text">{shortDescription}</p>
-                            <a href="#" className="btn btn-primary mr-2">Website</a>
-                            <a href="#" className="btn btn-primary">Github</a>
+            <div className="col-md-4 text-dark">
+                <div className="card">
+                    <img src={img_1} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">{title}</h5>
+                        <p className="card-text">{shortDescription}</p>
+                        <div className="mt-3">
+                            <a href={website} target="_blank " className="btn btn-primary mr-2">Website</a>
+                            <a href={client_side_code} target="_blank" className="btn btn-primary mr-2">Github</a>
+                            <Link onClick={() => handleProject(props.item)} className="text-decoration-none text-dark" to="/portfolioItemDetails"><button className="btn btn-primary">Details</button></Link>
                         </div>
-                    </Link>
+                    </div>
                 </div>
             </div>
             {/* <div>

@@ -14,8 +14,8 @@ const AboutMe = () => {
                         <h3 className="text-white mb-30 fs-30 fw-200">About <span className="font-weight-bold text-white">Me</span></h3>
                         <p className="color-1">I am skilled in web development, web designing, and making websites using WordPress.I can make any type of website, be it an e-commerce website, a business website, a promotional website, a blog, etc.</p>
                         <p className="color-1 mb-5">My passion for web development started a few years ago. I am a Computer Science student currently and the web development sector of Computer Science has always fascinated me. I can spend hours on end learning how to code, design webpages, applying new innovative ideas to my older projects. It interests me so much so that I can now say web works are one of my favorite pastimes. I am pretty sure I am on the right path with this.</p>
-                        <Link to="/contact-me" className="text-warning mr-2">Hire Me</Link>
-                        <a target="_blank" href="https://drive.google.com/file/d/1UZuM4RjUmLMNS9eqyeSiSOC02tR1nicv/view?usp=sharing" className="text-primary">Download CV</a>
+                        <Link to="/contact-me" className="btn btn-warning mr-2">Hire Me</Link>
+                        <a target="_blank" href="https://drive.google.com/file/d/1UZuM4RjUmLMNS9eqyeSiSOC02tR1nicv/view?usp=sharing" className="btn btn-primary">Download Resume</a>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import { projectContext } from '../../../App';
 import './PortfolioItem.css';
 
 const PortfolioItem = (props) => {
-    const { title, shortDescription, img_1 } = props.item;
+    const { title, shortDescription, img_1, website, client_side_code } = props.item;
 
     const [project, setProject] = useContext(projectContext);
 
@@ -13,14 +13,18 @@ const PortfolioItem = (props) => {
     }
 
     return (
-        <div className="col-md-4 text-center mb-3">
-            <div>
-                <img src={img_1} className="img-box" alt="" />
-            </div>
-            <div className="mt-3">
-                <h4>{title}</h4>
-                <p className="mb-2 color-1">{shortDescription}</p>
-                <Link to="/portfolioItemDetails"> <button onClick={() => handleProject(props.item)} className="btn btn-warning">Details</button></Link>
+        <div className="col-md-6 text-center text-dark mb-3">
+            <div className="card">
+                <img src={img_1} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{title}</h5>
+                    <p className="card-text">{shortDescription}</p>
+                    <div className="mt-3">
+                        <a href={website} target="_blank " className="btn btn-primary mr-2">Website</a>
+                        <a href={client_side_code} target="_blank" className="btn btn-primary mr-2">Github</a>
+                        <Link onClick={() => handleProject(props.item)} className="text-decoration-none text-dark" to="/portfolioItemDetails"><button className="btn btn-primary">Details</button></Link>
+                    </div>
+                </div>
             </div>
         </div>
     );

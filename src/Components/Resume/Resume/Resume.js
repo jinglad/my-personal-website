@@ -7,15 +7,20 @@ const Resume = () => {
         <div className="container">
             <Navbar></Navbar>
             <div className="resume-container mt-5 p-5 bg-white">
-                <div>
-                    <h3>Mohammad Jihan Chowdhury</h3>
-                    <h4>Web Developer</h4>
-                    <p >Uttora,Dhaka</p>
-                    <p ><span className="font-weight-bold">Phone : </span>+8801778485208</p>
-                    <p className="m-0"><span className="font-weight-bold">Email : </span>jihanchowdhury70@gmail.com</p>
-                    <a className="mr-2" href="https://www.linkedin.com/in/jihan-chowdhury-7135411b4/">Linkedin</a>
-                    <a className="mr-2" href="https://github.com/jinglad">Github</a>
-                    <a href="https://medium.com/@jihanchowdhury70">Medium</a>
+                <div className="d-flex">
+                    <div className="mr-5">
+                        <h3>Mohammad Jihan Chowdhury</h3>
+                        <h4>Web Developer</h4>
+                        <p >Uttora,Dhaka</p>
+                        <p ><span className="font-weight-bold">Phone : </span>+8801778485208</p>
+                        <p className="m-0"><span className="font-weight-bold">Email : </span>jihanchowdhury70@gmail.com</p>
+                        <a className="mr-2" href="https://www.linkedin.com/in/jihan-chowdhury-7135411b4/">Linkedin</a>
+                        <a className="mr-2" href="https://github.com/jinglad">Github</a>
+                        <a href="https://medium.com/@jihanchowdhury70">Medium</a>
+                    </div>
+                    <div className="ml-5">
+                        <a href="https://drive.google.com/file/d/1UZuM4RjUmLMNS9eqyeSiSOC02tR1nicv/view?usp=sharing" target="_blank" className="btn btn-warning text-decoration-none text-dark">Download My Resume</a>
+                    </div>
                 </div>
                 <div className="summary mt-5">
                     <h5 className="font-weight-bold">Summary</h5>
@@ -35,7 +40,7 @@ const Resume = () => {
                 <div className="projects mt-5">
                     <h5 className="font-weight-bold mb-3">Projects</h5>
                     <div className="mb-2">
-                        <h5 className="font-weight-bold" style={{color:"#29662a"}}>Volunteer-Network</h5>
+                        <h5 className="font-weight-bold" style={{ color: "#29662a" }}>Volunteer-Network</h5>
                         <p className="font-weight-bold">Overview: </p>
                         <ul>
                             <li>MERN project. This is a volunteer registration website where user can find   many events and can register for a particular event.</li>
@@ -48,7 +53,7 @@ const Resume = () => {
                         <a href="https://github.com/jinglad/volunteer-server-01">Server-Side-Code </a>
                     </div>
                     <div className="mb-2">
-                        <h5 className="font-weight-bold" style={{color:"#29662a"}}>Creative Agency</h5>
+                        <h5 className="font-weight-bold" style={{ color: "#29662a" }}>Creative Agency</h5>
                         <p className="font-weight-bold">Overview: </p>
                         <ul>
                             <li>MERN project. This is an agency website where user can find many services and can order any of the services.</li>
@@ -62,7 +67,7 @@ const Resume = () => {
                         <a href="https://github.com/jinglad/creative-agenct-backend">Server-Side-Code </a>
                     </div>
                     <div className="mb-2">
-                        <h5 className="font-weight-bold" style={{color:"#29662a"}}>Travel Guru</h5>
+                        <h5 className="font-weight-bold" style={{ color: "#29662a" }}>Travel Guru</h5>
                         <p className="font-weight-bold">Overview: </p>
                         <ul>
                             <li>React-js Project. This is travel agency website where user can book a place for travel.</li>
@@ -94,7 +99,7 @@ const Resume = () => {
                 <div className="education mt-5">
                     <h5 className="font-weight-bold mb-3">Education</h5>
                     <p>
-                    Sylhet Engineering College, Sylhet (February 2018 – Present) <br/>
+                        Sylhet Engineering College, Sylhet (February 2018 – Present) <br />
                     B.Sc In Computer Science and Engineering
                     </p>
                 </div>

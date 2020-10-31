@@ -9,9 +9,9 @@ const PortfolioItemDetails = () => {
 
     return (
         <div className="container">
-             <Navbar></Navbar>
+            <Navbar></Navbar>
             <div className="row text-white mt-5">
-                <div className="col-md-6">
+                <div className="col-12">
                     <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
@@ -37,16 +37,16 @@ const PortfolioItemDetails = () => {
                         </a>
                     </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-12 mt-3 mb-5">
                     <div>
                         <h1>{title}</h1>
                         <p>{description}</p>
-                        <p>Technologies: {technologies}</p>
-                        <div>
-                            <a href={website}>Website</a><br/>
-                            <a href={client_side_code}>Client Side Code</a><br/>
+                        <p><span className="font-weight-bold text-warning py-3">Technologies: </span> {technologies}</p>
+                        <div className="mt-2">
+                            <a className="btn btn-primary mr-2" target="_blank" href={website}>Website</a>
+                            <a className="btn btn-primary mr-2" target="_blank" href={client_side_code}>Client Side Code</a>
                             {
-                                server_side_code && <a href={server_side_code}>Server Side Code</a>
+                                server_side_code && <a className="btn btn-primary" target="_blank" href={server_side_code}>Server Side Code</a>
                             }
                         </div>
                     </div>
