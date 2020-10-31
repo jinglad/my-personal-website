@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HomePortfolioItem from '../HomePorfolioitem/HomePortfolioItem';
+import img_1 from '../../../image/c_a_1.png';
+import img_2 from '../../../image/c_a_2.png';
+import img_3 from '../../../image/c_a_3.png';
+import img_4 from '../../../image/c_a_4.png';
 
 const portfolioData = [
     {
@@ -11,11 +15,10 @@ const portfolioData = [
         website : "https://volunteer-network-a49e7.web.app",
         client_side_code : "https://github.com/jinglad/volunteer-network-client",
         server_side_code : "https://github.com/jinglad/volunteer-server-01",
-        img_1 : "https://lh3.googleusercontent.com/-BFsZHd1MlTxSy4TbW-QZXIsd5Ksw4pcZtvqwEqRzt1SetsW365D7unZQln8T9_9fVPZ0E-LU2XLLJNPmu1uCLAMVK0qATbrOM1nbKBcFfOV6gF0TMi0srzhiTMimNoGFu_i3pWrng=w2400",
-        img_2 : "https://lh3.googleusercontent.com/HqSSYiPSm1NwmJAlBFm1LpjO0j12AaWR1lk3eelGjgPqM_zHqoKvd2xvRZ6HMV2Og_wobO1rEbPQdac6nG8N7wV3aXZvkemOluF40fQjTAqJ7R1pWgxa5GLhtbckfR-qxbIqGW-UKA=w2400",
-        img_3 : "https://lh3.googleusercontent.com/mRcEqWA8GnBQwBAkpjHpt6EaqXKshZYSOvue0lmPzjKlgQVWyCE1adxoOmUs1seoZHlsQEgTAEJEZNIe6Xv59Snohr76E0Loekhfv6CBsI0MTJ658MNjf7HlQUS11d_RnBFynDYq7Q=w2400",
-        img_4 : "https://lh3.googleusercontent.com/CoKLM_Ebac4szA4ri8lNwrs55XL7dELOPpZ8dPIZMsZTbIdMz1A9FpL_potSCkqPY5FWIc9lwUKn1X5VqhzvQjEgUjjB7T-CG94kiWOR-vIh4kGRwYtxeclkzR-qQo9aTbqApqyigw=w2400",
-        img_5 : "https://lh3.googleusercontent.com/vXXm3Vtp9ekf7xrw1U9gaG1d0a57RUjTwiXb41HihbLkGJCichSDaO8ZGDL01B82yce4ibfqav6UWHVKyn1XtyAILJaTcbWPtw3ZpnIhtPPPdjwNu1D4KlsqmNvzhdVcmbjf-OypHQ=w2400"
+        img_1 : "https://lh3.googleusercontent.com/TstwT1nuObXQ0_Js5VAibntdEI5v3KgGFFZi6ZOFjhRgSvduH7vhm_aQCPUdn6uHSCLIo5xvJ25RCr8Y0qoARsiVr4efpK4V_uswe-OF8SM7jL4EGRgbOTw_wY7zEZye0Nk0u7qf4A=w2400",
+        img_2 : "https://lh3.googleusercontent.com/r41G0QA0JvwdUiA8UJ7XfeB7ZSrlDC68ZoQFVp8f12kz8MPe8a8IyaFI-hRceVne8oVzZGgoBDPug_msRxIfZrGTZBZ1ITMpBoi2CKQUF3JLVpMbZmRbceSd45-iVvOychlqevm13w=w2400",
+        img_3 : "https://lh3.googleusercontent.com/zZNf7O6fqLerAZ13C_-kTKvcAnY8mHzIPvHQeSu6-_KUVkFwr8o0gvUYENUK7X29cr1jJo1TE9o51jZqgny5KMuK86xvViaweD1Kn5ecpZl4mKfg7THW9dZTfkcccUu5ZdlMzr-ZxA=w2400",
+        img_4 : "https://lh3.googleusercontent.com/v-1BLTZ8fhLYZqteA1sB87J3PE7cH57qkfXAh9gkUIJ0SzRZaO2QeE66DKqZgfvkqgTH60ZoSGg-paDjQHU35BfrnpxJPyck7D_TylAjSRfhDwh-NyDn8bx1NA94nOMlzL2HXoPyBg=w2400"
     },
     {
         title: "Creative Agency",
@@ -25,11 +28,10 @@ const portfolioData = [
         website : "https://creative-agency-f57e2.web.app",
         client_side_code : "https://github.com/jinglad/creative-agency-client",
         server_side_code : "https://github.com/jinglad/creative-agenct-backend",
-        img_1 : "https://lh3.googleusercontent.com/qD5DQJMhOOvy0nza1YroyitljH-JoPoEzd5-QgMDC3oAv91msBkEKNnHWqv4qntdwTBRhVyxS0xSh3cu-my7awLStDdbj_dJjOp0xN0-8cvMWZdGnPaOTl4TuJvnzzUWIscs_y9cFA=w2400",
-        img_2 : "https://lh3.googleusercontent.com/cQRRxHXHuW5ELQW9FcjvJ6Ybsp-4-CXHFS5FIPICc0YCg8S939AQEsRXZ6uPcAvjK1zzzXza4kxu7uizmxJqi0mKujK7YJ1kuw4Km9p_R4OdKJhWXstxa5ubVEk7jVAgdDQB5HTrQQ=w2400",
-        img_3 : "https://lh3.googleusercontent.com/k1n1h5G98wqyUIEd65jQfCzds4dPPvGQbPjc4d-bCwWWrjwEtxwUVCs7WEf0LVNF5E4HQ4ukz-cQlbh_BxR39WK5wf20--YiLqkcbh697bEu6lIn-aGHlr8_yDvW7MMAgZQ9ltRkZA=w2400",
-        img_4 : "https://lh3.googleusercontent.com/EZ1jhfEb1TL4y9duf7zL8NAG1fhuWp-qofb-yY7vA7qfB5D2av6J_-_bK_G62Voi5TBTaMBUGIckkQ_-M2yF2w3GidtccZWnRhMLSFsSMHJRgb81_PDt9FrnzHKgHlhuNKuSmy8nlg=w2400",
-        img_5 : "https://lh3.googleusercontent.com/A-GkpOkCh7NFCu0HlcejO215EnbIHK7x4-XmB5etL1LxuDudvL0ttnCzwTb9qxLGP54o0RogqQftP3o4IdGCz0PhGmOsulNyyWrmNYEaRG5KMM9-AS4gqpAS9NdlC7sWvL-QmXU2tA=w2400"
+        img_1 : img_1,
+        img_2 : img_2,
+        img_3 : img_3,
+        img_4 : img_4,
     },
     {
         title: "Travel Guru",

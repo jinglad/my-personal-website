@@ -26,9 +26,6 @@ const PortfolioItemDetails = () => {
                             <div className="carousel-item">
                                 <img src={img_4} className="d-block w-100 h-700" alt="..." />
                             </div>
-                            <div className="carousel-item">
-                                <img src={img_5} className="d-block w-100 h-700" alt="..." />
-                            </div>
                         </div>
                         <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
