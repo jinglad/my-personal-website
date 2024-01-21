@@ -4,17 +4,18 @@ import HomePortfolioItem from "../HomePorfolioitem/HomePortfolioItem";
 
 export const portfolioData = [
   {
-    title: "Amazon Clone",
+    title: "Apex",
     shortDescription:
-      "This is an ecommerce website where user can find many products and can add the products to cart or remove those from cart",
+      "This is an ecommerce website where users can explore a wide range of products and easily place orders for their desired items through a user-friendly interface.",
     description: `This is a (React + firebase) project. It is an ecommerce website. Where users can browse
         different products and choose some products and can add it to cart and also remove the product from cart.Has user authentication. This is simple authentication built with firebase (email+password) authentication.Users can add products to cart and check all the products in the checkout page and also can see the total amount to pay for their shopping.`,
     technologies:
       "ReactJs, Firebase authentication, React Router, Material UI, React Currency Format,React Context API, Styled Component",
-    website: "https://clone-2ccbe.web.app/",
-    client_side_code: "https://github.com/jinglad/amazon-clone-react",
+    website: "https://apex4u.com/",
+    client_side_code: "",
     server_side_code: "",
-    img_1: "https://iili.io/R5coXa.png",
+    img_1:
+      "https://ipfs.filebase.io/ipfs/QmXWxXDtP5q7z2S49ygS45zv8hvGA4y1rYrjrxakfR2wNr",
     img_2: "https://iili.io/R5cW22.png",
     img_3: "https://iili.io/R5cOhu.png",
     img_4: "https://iili.io/R5ceLb.png",
@@ -30,7 +31,8 @@ export const portfolioData = [
     website: "https://creative-agency-f57e2.web.app",
     client_side_code: "https://github.com/jinglad/creative-agency-client",
     server_side_code: "https://github.com/jinglad/creative-agenct-backend",
-    img_1: "https://iili.io/R5cRdN.png",
+    img_1:
+      "https://ipfs.filebase.io/ipfs/QmXWxXDtP5q7z2S49ygS45zv8hvGA4y1rYrjrxakfR2wNr",
     img_2: "https://iili.io/R5cRdN.png",
     img_3: "https://iili.io/R5cRdN.png",
     img_4: "https://iili.io/R5cRdN.png",
